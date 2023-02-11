@@ -1,0 +1,2 @@
+1) DOM element is aka Node
+2) Major Scripting Language: JS and PHP
