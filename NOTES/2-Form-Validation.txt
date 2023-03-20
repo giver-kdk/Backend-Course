@@ -1,0 +1,8 @@
+Form Validation: 
+	- Client Side Validation(HTML, JS)
+	- Server Side Validation (Dyamic Program, i.e; PHP, NodeJS Library, Java, ASP.NET) 
+	- Advanced Server Tier Validation (Database Entities or Document Constraints)
+		- Eg of Costraint: In Database: 	Data -> Data Type -> Data Constraint
+							10 -> Integer -> max_limit 20 digits (or it should be Unique)
+
+						

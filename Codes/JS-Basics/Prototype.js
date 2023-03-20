@@ -8,7 +8,7 @@
 */
 
 // To check built-in prototypes of array and object, we can do: 
-// See i nbrowser for detailed prototypes like: forEach, map, indexOf, ...etc
+// See in browser for detailed prototypes like: forEach, map, indexOf, ...etc
 console.log(Array());
 console.log(Object());
 
