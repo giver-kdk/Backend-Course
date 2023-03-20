@@ -13,4 +13,3 @@ console.log(Array());
 console.log(Object());
 
 // We can create our own prototype as well
-
