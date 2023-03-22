@@ -6,64 +6,27 @@
         - if a function works with either of the two, it becomes a higher-order function
         - In Javascript functions, map, filer and reduce are examples of built-in higher order functions.
 */ 
-
-// JS Script
-const arrData=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-// filter odd numbers
-filterOdd=[];
-for (let i = 0; i < arrData.length; i++)
+let array1 = [1, 2, 3, 4 , 5];
+// Create custom prototype function "myFilter" that takes "filterOdd" as its argument(callback function)
+Array.prototype.myFilter = function (filterOdd)			
 {
-    if((arrData[i]%2)!=0)
-    {
-            filterOdd.push(arrData[i]);
-    }
+	let resultArray = [];
+	for(let i = 0; i < this.length; i++)				// "this" means the array that uses "myFilter"
+	{
+		if(filterOdd(this[i]))							// "this[i]"  means the ith element of array that uses "myFilter"
+		{
+			resultArray.push(this[i]);					// If the element passes the filter test, then add it to "resultArray"
+		}
+	}
+	return resultArray;								
+}
+// This is the actual filtering test, that each element needs to go through
+function filterOdd(num)									// Here, "num" is the array element to be tested
+{
+	if(num % 2 != 0) return true;
+	else return false;
 }
 
-console.log(filterOdd);
-
-// using function 
-function arrFilter()
-{
-    const filterOdd=[];
-    for (let i = 0; i < arrData.length; i++)
-    {
-        if((arrData[i]%2!=0))
-        {
-            filterOdd.push(arrData[i]);
-        }
-    }
-    return filterOdd;       //calling function filterOdd
-}
-
-console.log(arrFilter());   
-
-
-const data=[1, 2, 3, 4, 5];
-// Prototype can be customly created.
-
-// Creating custom prototype in JS
-Array.prototype.customFilter=function(fn)
-{
-    const filtered=[];
-    for (let i = 0; i < this.length; i++)
-    {
-        if (fn(this[i]))
-        {
-            filtered.push(this[i]);
-        }
-    }
-    return filtered;
-}
-console.log(Array());
-
-// display numbers elements greater than 2 
-const data1=[1, 2, 3, 4, 5];
-const filteredData=data1.customFilter(function(el)
-{
-    if(el>2)
-    {
-        return el;
-    }
-});
-
-console.log(filteredData);
+// Here, "myFilter" is just like "filter()" in JS and "filterOdd" is like "filter()"'s callback function
+let oddArray = array1.myFilter(filterOdd);
+console.log(oddArray);
