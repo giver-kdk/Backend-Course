@@ -1,0 +1,33 @@
+- Node works by making own server (Cause its a server side scripting language back-end (server-side) program)
+- Servers: 
+	- Localhost (On local computer)
+	- Vitual Host (On local computer)
+	- Classis Server (To go live)
+	- Cloud Server (To go live)
+
+	Additionally:
+	- VPS (Virtual Private Server) (To go Live)
+
+- To work efficiently with easy coding: 
+	NodeJS has framework called ExpresJS.
+
+- To make web pages, we require standard engine likwe HTML. NodeJS has Template Engine called ExpresJS
+- EJS is later on conveted into HTML
+
+- Every program leads with entry point like index.html of HTML, index.php of PHP program
+	- We can provide custom entry point to the NodeJS.
+	- By default, it takes index.js as an entry point
+
+- General Packages for project: 
+	- To use ".env" file to configure environment variables
+		nodejs package: dotenv				// For db name, host port name, db user pw, etc. 
+	- Framework level activities: 
+		nodejs package: ExpressJS
+	- Session handling 
+		nodejs package: express-session
+	- Form validation
+		nodejs package: express-validation
+	- Handling image MIME type
+		nodejs package: multer
+	
+- MIT License is open source license
