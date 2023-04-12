@@ -1,0 +1,27 @@
+- npm i express							
+- npm i -D nodemon						// -D is Dev dependencies for nodemon
+
+- npm run watch 						// Start node using "watch"
+
+
+In package.json, "watch": "nodemon app.js" ensures that server is updated according to update in app.js
+
+// To run expess in ES6 method:
+// These packages helps to run expressJS using ES6 method:
+	- npm i -D @babel/core @babel/node @babel/preset-env	
+
+// Good way. This allows ES6 and ES5
+1. 	a. create ".babelrc" file and write: {"presets":["@babel/preset-env"]} to use the packages
+
+	b. update package.json as: "watch": "nodemon --exec babel-node app.js"
+
+OR,
+// This only allows ES6
+2.	a. update package.json as: "type": "module"
+
+
+// To use .env
+- npm i dotenv							
+
+// Install EJS as template engine for HTML
+- npm i ejs
