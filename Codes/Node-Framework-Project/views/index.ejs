@@ -5,11 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><%= title %></title>
+	<link rel="stylesheet" href="/app.css">
 </head>
 <body>
 	<h1>Hi NodeJS</h1>
+	<div class="text-box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum molestias dignissimos ea laborum ut. Amet culpa minus tempore commodi exercitationem at nihil! Suscipit, libero iure facere perspiciatis quae cumque, ipsam dolore, neque nihil quidem harum! Soluta molestias nobis unde voluptatem dolorum aliquid itaque ex quasi recusandae quos rem a, veniam explicabo quia? Nesciunt, nostrum sapiente eos voluptas aspernatur reprehenderit dolor dicta expedita suscipit labore ratione magnam id ipsam recusandae autem blanditiis dignissimos. Velit, optio dolor delectus eum obcaecati ullam fugiat facilis? Enim fugiat quibusdam ipsa consectetur quaerat veritatis itaque minus reiciendis distinctio maxime laboriosam, fuga, et debitis, consequatur molestiae ipsum.</div>
 	<p>This is written in EJS</p>
-	<!-- "/" means inside "public" -->
-	<img src="/images/mushroom.jpg" alt="Mushroom Pic">
+	<figure class="entry-image">
+		<!-- "/" means inside "public" -->
+		<img src="/images/mushroom.jpg" alt="Mushroom Pic">
+	</figure>
+	<div class="btn-group">
+		<a href="/login" class="btn">Login</a>
+		<a href="/register" class="btn btn-secondary">Register</a>
+	</div>
+	<a href="/contact" class="text-link">Contact</a>
 </body>
 </html>

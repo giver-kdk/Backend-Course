@@ -1,0 +1,4 @@
+- Mongo Compass
+- Set MongoB environment in local 
+- Environment ca be set up in cloud by using account
+- Mongo Shell is MongoSh

@@ -1,121 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><%=title%></title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-		<style>
-		  html, body {
-		  min-height: 100%;
-		  padding: 0;
-		  margin: 0;
-		  font-family: Roboto, Arial, sans-serif;
-		  font-size: 14px;
-		  color: #666;
-		  }
-		  h1 {
-		  margin: 0 0 20px;
-		  font-weight: 400;
-		  color: #1c87c9;
-		  }
-		  p {
-		  margin: 0 0 5px;
-		  }
-		  .main-block {
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: center;
-		  align-items: center;
-		  min-height: 100vh;
-		  background: #1c87c9;
-		  }
-		  form {
-		  padding: 25px;
-		  margin: 25px;
-		  box-shadow: 0 2px 5px #f5f5f5; 
-		  background: #f5f5f5; 
-		  }
-		  .fas {
-		  margin: 25px 10px 0;
-		  font-size: 72px;
-		  color: #fff;
-		  }
-		  .fa-envelope {
-		  transform: rotate(-20deg);
-		  }
-		  .fa-at , .fa-mail-bulk{
-		  transform: rotate(10deg);
-		  }
-		  input, textarea {
-		  width: calc(100% - 18px);
-		  padding: 8px;
-		  margin-bottom: 20px;
-		  border: 1px solid #1c87c9;
-		  outline: none;
-		  }
-		  input::placeholder {
-		  color: #666;
-		  }
-		  button {
-		  width: 100%;
-		  padding: 10px;
-		  border: none;
-		  background: #1c87c9; 
-		  font-size: 16px;
-		  font-weight: 400;
-		  color: #fff;
-		  }
-		  button:hover {
-		  background: #2371a0;
-		  }    
-		  @media (min-width: 568px) {
-		  .main-block {
-		  flex-direction: row;
-		  }
-		  .left-part, form {
-		  width: 50%;
-		  }
-		  .fa-envelope {
-		  margin-top: 0;
-		  margin-left: 20%;
-		  }
-		  .fa-at {
-		  margin-top: -10%;
-		  margin-left: 65%;
-		  }
-		  .fa-mail-bulk {
-		  margin-top: 2%;
-		  margin-left: 28%;
-		  }
-		  }
-		</style>
+	<title>
+		<%=title%>
+	</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<style>
+		html,
+		body {
+			min-height: 100%;
+			padding: 0;
+			margin: 0;
+			font-family: Roboto, Arial, sans-serif;
+			font-size: 14px;
+			color: #666;
+		}
+
+		h1 {
+			margin: 0 0 20px;
+			font-weight: 400;
+			color: #1c87c9;
+		}
+
+		p {
+			margin: 0 0 5px;
+		}
+
+		.main-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #1c87c9;
+		}
+
+		form {
+			padding: 25px;
+			margin: 25px;
+			box-shadow: 0 2px 5px #f5f5f5;
+			background: #f5f5f5;
+		}
+
+		.fas {
+			margin: 25px 10px 0;
+			font-size: 72px;
+			color: #fff;
+		}
+
+		.fa-envelope {
+			transform: rotate(-20deg);
+		}
+
+		.fa-at,
+		.fa-mail-bulk {
+			transform: rotate(10deg);
+		}
+
+		input,
+		textarea {
+			width: calc(100% - 18px);
+			padding: 8px;
+			margin-bottom: 20px;
+			border: 1px solid #1c87c9;
+			outline: none;
+		}
+
+		input::placeholder {
+			color: #666;
+		}
+
+		button {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			background: #1c87c9;
+			font-size: 16px;
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		button:hover {
+			background: #2371a0;
+		}
+		.map-box {
+			display: block;
+			width: 600px;
+			margin: auto;
+		}
+		@media (min-width: 568px) {
+			.main-block {
+				flex-direction: row;
+			}
+
+			.left-part,
+			form {
+				width: 50%;
+			}
+
+			.fa-envelope {
+				margin-top: 0;
+				margin-left: 20%;
+			}
+
+			.fa-at {
+				margin-top: -10%;
+				margin-left: 65%;
+			}
+
+			.fa-mail-bulk {
+				margin-top: 2%;
+				margin-left: 28%;
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<h1>Hello Guys</h1>
-	<p>This is Contact Page</p>		
+	<p>This is Contact Page</p>
 	<div class="main-block">
 		<div class="left-part">
-		<i class="fas fa-envelope"></i>
-		<i class="fas fa-at"></i>
-		<i class="fas fa-mail-bulk"></i>
+			<i class="fas fa-envelope"></i>
+			<i class="fas fa-at"></i>
+			<i class="fas fa-mail-bulk"></i>
 		</div>
-		<form action="/">
-			<h1>Contact Us</h1>
-			<div class="info">
-				<input class="fname" type="text" name="name" placeholder="Full name">
-				<input type="text" name="name" placeholder="Email">
-				<input type="text" name="name" placeholder="Phone number">
-				<input type="text" name="name" placeholder="Website">
-			</div>
-			<p>Message</p>
-			<div>
-				<textarea rows="4"></textarea>
-			</div>
-			<button type="submit" href="/">Submit</button>
-		</form>
+		<div class="breadcrumb">
+			<a href="/" title="Home">Home</a>&raquo
+		</div>
+		<div class="form-box">
+			<form action="#" method="POST" name="contact__form">
+				<h1>Contact Us</h1>
+				<div class="info">
+					<input class="fname" type="text" name="name" placeholder="Full name">
+					<input type="text" name="name" placeholder="Email">
+					<input type="text" name="name" placeholder="Phone number">
+					<input type="text" name="name" placeholder="Website">
+				</div>
+				<p>Message</p>
+				<div>
+					<textarea rows="4"></textarea>
+				</div>
+				<button type="submit" href="/">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="map-box">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.21326292756!2d85.32768641506148!3d27.679802782803407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ca771e9e55%3A0xc94f84d1f057520f!2sNagarjuna%20College%20of%20IT!5e0!3m2!1sen!2snp!4v1681287815724!5m2!1sen!2snp"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 
 
@@ -130,4 +170,5 @@
 
 
 </body>
+
 </html>

@@ -1,0 +1,3 @@
+- Concept of Middleware
+- Status Codes: 200, 404, 300, etc.
+- JSON Viewer Chrome Extension 

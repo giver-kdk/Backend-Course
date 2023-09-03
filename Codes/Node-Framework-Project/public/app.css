@@ -1,0 +1,48 @@
+.entry-box
+{
+	background-color: #F2F2F2;
+	border: 1px solid #CCC;
+	box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.2);
+	max-width: 600px;
+	padding: 40px;
+	margin: 40px auto;
+}
+img
+{
+	max-width: 100%;
+	/* border: 2px solid red; */
+}
+figure
+{
+	margin: 0;
+}
+.btn
+{
+	display: inline-block;
+	background-color: green;
+	padding: 12px;
+	margin: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	transform: 0.3s;
+}
+.btn-secondary
+{
+	background-color: darkcyan;
+}
+.btn:hover
+{
+	transform: translateY(-3px);
+}
+.text-link
+{
+	display: inline-block;
+	color: darkcyan;
+	font-weight: 700;
+	font-size: 21px;
+}
+.text-link:hover
+{
+	text-decoration: none;
+}
